@@ -1,0 +1,2 @@
+export type TimeInput = string | number | undefined | null;
+ 
