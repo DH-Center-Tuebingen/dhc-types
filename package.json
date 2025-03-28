@@ -5,7 +5,7 @@
   "main": "dist/index.d.ts",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsup src/index.ts --dts --format esm,cjs",
     "prepublishOnly": "npm run build",
     "prepare": "npm run build"
   },
@@ -68,7 +68,10 @@
     "vscode-uri": "^3.0.8",
     "yallist": "^4.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "dhc-types": "github:DH-Center-Tuebingen/dhc-types",
+    "tsup": "^8.4.0"
+  },
   "author": "Severin Opel",
   "license": "UNLICENSED",
   "private": true

@@ -4,8 +4,9 @@
     ],
     "compilerOptions": {
         "declaration": true,
+        "declarationDir": "./dist",
         "emitDeclarationOnly": true,
-        "outDir": "dist",
+        "outDir": "./dist",
         "declarationMap": true,
         "skipLibCheck": true
     }
