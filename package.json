@@ -4,7 +4,13 @@
   "description": "",
   "main": "dist/index.d.ts",
   "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
+  },
   "files": [
+    "src/**/*",
     "dist/*.d.ts"
   ],
   "dependencies": {
